@@ -13,6 +13,7 @@ First, you need to understand how each component is connected:
     - A buzzer requires 1 ground pin and 1 GPIO pin
 
     Each component requires its own individual GPIO pin, but components can share a ground pin. We will use the breadboard to enable this.
+    
 --- task ---
 
 Place the components on the breadboard and connect them to the Raspberry Pi GPIO pins, according to the following diagram:
