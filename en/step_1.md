@@ -3,6 +3,16 @@
     </iframe>    
 </html>
 
+--- collapse ---
+---
+title: No YouTube? Download the video!
+---
+
+You can download all the videos for this project, including the above video [by clicking here](https://rpf.io/p/en/rpi-traffic-lights-go){:target="_blank"}. 
+
+
+--- /collapse ---
+
 
 ## Traffic Lights
 
