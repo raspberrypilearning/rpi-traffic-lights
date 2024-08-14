@@ -38,6 +38,16 @@ The `TrafficLights` interface takes three GPIO pin numbers, one for each pin: re
 
 --- task ---
 
+Set up your button using the pin number it is connected to on the Raspberry Pi:
+
+```python
+button = Button(21)
+```
+
+--- /task ---
+
+--- task ---
+
 Now add a `while` loop to control the `TrafficLights` object:
 
 ```python
@@ -56,13 +66,13 @@ The `TrafficLights` interface is very similar to that of an individual LED: you 
 
 Try the `blink` example:
 
-    ```python
-    while True:
-        lights.blink()
-        button.wait_for_press()
-        lights.off()
-        button.wait_for_release()
-    ```
+```python
+while True:
+    lights.blink()
+    button.wait_for_press()
+    lights.off()
+    button.wait_for_release()
+```
 
 --- /task ---
 
@@ -76,9 +86,9 @@ Now you'll add your buzzer to make some noise.
 
 Add `Buzzer` to the `from gpiozero import...` line:
 
-    ```python
-    from gpiozero import Button, TrafficLights, Buzzer
-    ```
+```python
+from gpiozero import Button, TrafficLights, Buzzer
+```
 
 --- /task ---
 
@@ -86,9 +96,9 @@ Add `Buzzer` to the `from gpiozero import...` line:
 
 Add a line below your creation of `button` and `lights` to add a `Buzzer` object:
 
-    ```python
-    buzzer = Buzzer(15)
-    ```
+```python
+buzzer = Buzzer(15)
+```
 
 --- /task ---
 
@@ -96,15 +106,15 @@ Add a line below your creation of `button` and `lights` to add a `Buzzer` object
 
 `Buzzer` works exactly like `LED`, so try adding a `buzzer.on()` and `buzzer.off()` into your loop:
 
-    ```python
-    while True:
-        lights.on()
-        buzzer.off()
-        button.wait_for_press()
-        lights.off()
-        buzzer.on()
-        button.wait_for_release()
-    ```
+```python
+while True:
+    lights.on()
+    buzzer.off()
+    button.wait_for_press()
+    lights.off()
+    buzzer.on()
+    button.wait_for_release()
+```
 
 --- /task ---
 
@@ -114,15 +124,15 @@ Add a line below your creation of `button` and `lights` to add a `Buzzer` object
 
 Try it out:
 
-    ```python
-    while True:
-        lights.blink()
-        buzzer.beep()
-        button.wait_for_press()
-        lights.off()
-        buzzer.off()
-        button.wait_for_release()
-    ```
+```python
+while True:
+    lights.blink()
+    buzzer.beep()
+    button.wait_for_press()
+    lights.off()
+    buzzer.off()
+    button.wait_for_release()
+```
 
 --- /task ---
 
@@ -135,9 +145,9 @@ As well as controlling the whole set of lights together, you can also control ea
 
 At the top of your file, below `from gpiozero import...`, add a line to import the `sleep` function:
 
-    ```python
-    from time import sleep
-    ```
+```python
+from time import sleep
+```
 
 --- /task ---
 
@@ -146,16 +156,16 @@ At the top of your file, below `from gpiozero import...`, add a line to import t
 
 Modify your loop to perform an automated sequence of LEDs being lit:
 
-    ```python
-    while True:
-        lights.green.on()
-        sleep(1)
-        lights.amber.on()
-        sleep(1)
-        lights.red.on()
-        sleep(1)
-        lights.off()
-    ```
+```python
+while True:
+    lights.green.on()
+    sleep(1)
+    lights.amber.on()
+    sleep(1)
+    lights.red.on()
+    sleep(1)
+    lights.off()
+```
 
 --- /task ---
 
@@ -163,17 +173,17 @@ Modify your loop to perform an automated sequence of LEDs being lit:
 
 Add a `wait_for_press` so that pressing the button initiates the sequence:
 
-    ```python
-    while True:
-        button.wait_for_press()
-        lights.green.on()
-        sleep(1)
-        lights.amber.on()
-        sleep(1)
-        lights.red.on()
-        sleep(1)
-        lights.off()
-    ```
+```python
+while True:
+    button.wait_for_press()
+    lights.green.on()
+    sleep(1)
+    lights.amber.on()
+    sleep(1)
+    lights.red.on()
+    sleep(1)
+    lights.off()
+```
 
 --- /task ---
 
