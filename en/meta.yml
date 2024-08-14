@@ -8,5 +8,11 @@ last_tested: "2022-05-19"
 steps:
   - title: Introduction
   - title: Connect the Traffic Lights
+    completion:
+    - engaged
   - title: Code the Traffic Lights
-  - title: What can I do next?
+    completion:
+    - internal
+  - title: What can you do now?
+    completion:
+    - external
