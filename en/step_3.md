@@ -211,18 +211,3 @@ Try some more sequences of your own.
 
 --- /task ---
 
---- task ---
-
-Now try creating the full traffic lights sequence:
-
-- Green on
-- Amber on (Green off)
-- Red on (Amber off)
-- Amber on (Red stays on)
-- Green on (Amber and Red off)
-
-
-Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence in order.
-
---- /task ---
-
