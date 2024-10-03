@@ -23,7 +23,7 @@ You have three LEDs: red, amber, and green. Perfect for traffic lights! There's 
 
 --- task ---
 
-Import `Button` and `TrafficLights` by entering the follwoing code:
+Import `Button` and `TrafficLights` by entering the following code:
 
 ```python
 from gpiozero import Button, TrafficLights
@@ -67,6 +67,12 @@ while True:
 
 --- /task ---
 
+--- task ---
+
+Press **Run** in Thonny, then press the button to watch your lights come on!
+
+--- /task ---
+
 The `TrafficLights` interface is very similar to that of an individual LED: you can use `on`, `off`, and `blink`, all of which control all three lights at once.
 
 --- task ---
@@ -83,6 +89,11 @@ while True:
 
 --- /task ---
 
+--- task ---
+
+Press **Run** in Thonny, then press the button to watch your lights blink!
+
+--- /task ---
 
 
 ### Add a buzzer
@@ -205,12 +216,13 @@ Try some more sequences of your own.
 Now try creating the full traffic lights sequence:
 
 - Green on
-- Amber on
-- Red on
-- Red and amber on
-- Green on
+- Amber on (Green off)
+- Red on (Amber off)
+- Amber on (Red stays on)
+- Green on (Amber and Red off)
 
-Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
+
+Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence in order.
 
 --- /task ---
 
