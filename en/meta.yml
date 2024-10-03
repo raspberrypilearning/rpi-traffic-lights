@@ -1,0 +1,18 @@
+title: Raspberry Pi - Traffic Lights
+hero_image: images/banner.png
+description: Code three LEDs to resemble traffic lights with your Raspberry Pi.
+version: 4
+listed: false
+copyedit: false
+last_tested: "2022-05-19"
+steps:
+  - title: Introduction
+  - title: Connect the Traffic Lights
+    completion:
+    - engaged
+  - title: Code the Traffic Lights
+    completion:
+    - internal
+  - title: What can you do now?
+    completion:
+    - external
