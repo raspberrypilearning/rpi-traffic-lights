@@ -16,6 +16,8 @@ Be sure to turn the correct lights on and off at the right time, and make sure y
 
 --- /task ---
 
+### Fancy a Challenge?
+
 How about making a pedestrian crossing function for your Traffic Lights?
 
 Try adding another [button](https://projects.raspberrypi.org/en/projects/rpi-button-switch){:target="_blank"}  for a pedestrian crossing. The button should move the lights to red (not immediately), and give the pedestrians time to cross before moving back to green until the button is pressed again.
